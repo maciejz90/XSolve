@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trainee - XSolve</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+      	<script src="plugins/jquery2.js"></script>
+		<link href="plugins/jqueryui/jquery-ui.css" rel="stylesheet">
+		<script src="plugins/jqueryui/jquery-ui.js"></script>
+        <script src="main.js"></script>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="tableContainer">
+            <table id="employees">
+                <caption>Służba XSolve</caption>
+                <thead>
+                    <tr>
+                        <th onClick='sortTable2(0)'>Id</th>
+                        <th onClick='sortTable(1)'>First name</th>
+                        <th onClick='sortTable(2)'>Last name</th>
+                        <th onClick='sortTable(3)'>Birthday</th>
+                        <th onClick='sortTable(4)'>Function</th>
+                        <th onClick='sortTable(5)'>Experience</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input class="filterInput" type="text" id="myInput1" onkeyup="filterTable(0,1)" placeholder="Id...">
+                        </th>
+                        <th>
+                            <input class="filterInput" type="text" id="myInput2" onkeyup="filterTable(1,2)" placeholder="First name...">
+                        </th>
+                        <th>
+                            <input class="filterInput" type="text" id="myInput3" onkeyup="filterTable(2,3)" placeholder="Last name...">
+                        </th>
+                        <th>
+                            <input type="text" id="datepicker" placeholder="Urodzony później niż...">
+                        </th>
+                        <th>
+                            <input class="filterInput" type="text" id="myInput5" onkeyup="filterTable(4,5)" placeholder="Function...">
+                        </th>
+                        <th>
+                            <input class="filterInput" type="text" id="myInput6" onkeyup="filterTable(5,6)" placeholder="Experience...">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table> 
+        </div>
+    </body>
+</html>

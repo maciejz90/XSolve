@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#employees {
+    text-align: center;
+    border: 2px solid #000;
+    margin: 10px auto 0px;
+    border-collapse: collapse;
+    background: #a0a0a0;
+}
+
+#employees caption {
+    font-size: 32px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#employees thead tr th {
+    height: 30px;
+    background: #848484;
+    width: 150px;
+}
+
+#employees thead tr th:hover {
+    cursor: pointer;
+    background: #a7a7a7;
+}
+
+#employees thead tr:nth-child(2) th {
+    border: 1px solid #333;
+    background: #383838;
+}
+
+#employees tbody tr td {
+    border: 1px solid #333;
+    height: 24px;
+}
+
+.filterInput {
+    width: 100%;
+    
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: url(img/mglass.png);
+    background-position: 1px 2px;
+    background-repeat: no-repeat;
+    background-size: 12%;
+    padding: 2px 0px 2px 20px;
+}
+
+.pager {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.pager span {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+    background: #383838;
+
+    color: #fff;
+    margin-right: 8px;
+}
+
+.pager span:hover {
+    background: #c1c1c1;
+}
+
+.pager span.active {
+    background: #909090;
+}
